@@ -1,0 +1,22 @@
+CREATE TABLE IF NOT EXISTS PRO(
+    P_ID TEXT , 
+    P_NAME TEXT,
+    S_ID TEXT,
+    C_ID TEXT,
+    UNIT TEXT,
+    PRICE REAL
+);
+INSERT INTO PRO(P_ID,P_NAME,S_ID,C_ID,UNIT,PRICE)
+VALUES 
+    ('1','Laptop','1','1','12 BOXES * 20 BAGS',11),
+    ('2','PS5','2','2','1L * 10',21),
+    ('3','Chocolate','3','3','10 BOXES * 23 BAGS',69),
+    ('4','toys','4','4','12 BOXES * 10 BAGS',109),
+    ('5','Punching bag','5','5','13',97);
+
+SELECT COUNT (P_ID) AS P_COUNT
+FROM PRO ;
+SELECT AVG (PRICE) AS A_PRICE
+FROM PRO ;
+SELECT SUM (PRICE) AS T_PRICE 
+FROM PRO ;
